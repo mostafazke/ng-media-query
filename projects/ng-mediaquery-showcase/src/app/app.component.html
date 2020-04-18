@@ -1,0 +1,113 @@
+<!-- <div class="content hide-color" role="main">
+  <div class="box">
+    hide in XS
+    <div class="our-directive" *hideIn="breakPoints.xs">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-none">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    hide in SM
+    <div class="our-directive" *hideIn="breakPoints.sm">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-sm-none">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    hide in MD md
+    <div class="our-directive" *hideIn="breakPoints.md">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-md-none">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    hide in LG
+    <div class="our-directive" *hideIn="breakPoints.lg">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-lg-none">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    hide in XL
+    <div class="our-directive" *hideIn="breakPoints.xl">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-xl-none">{{ 2 + 1 }}</div>
+  </div>
+</div> -->
+<!-- <div class="content hide-for-default show-color" role="main">
+  <div class="box">
+    show in XS
+    <div class="our-directive" *showIn="breakPoints.xs">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-none d-block">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    show in SM
+    <div class="our-directive" *showIn="breakPoints.sm">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-none d-sm-block">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    show in MD md
+    <div class="our-directive" *showIn="breakPoints.md">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-none d-md-block">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    show in LG
+    <div class="our-directive" *showIn="breakPoints.lg">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-none d-lg-block">{{ 2 + 1 }}</div>
+  </div>
+  <div class="box">
+    show in XL
+    <div class="our-directive" *showIn="breakPoints.xl">{{ 2 + 1 }}</div>
+    <div class="css-media-query d-none d-xl-block">{{ 2 + 1 }}</div>
+  </div>
+</div> -->
+
+<main>
+  <header class="desktop-header" *showIn="breakPoints.md">
+    Desktop Header <br />This exeprission to profe that it will not evaluate til
+    it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </header>
+  <header class="mobile-header" *hideIn="breakPoints.md">
+    Mobile Header T <br />his exeprission to profe that it will not evaluate til
+    it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </header>
+  <aside class="mobile-sidebar" *hideIn="breakPoints.md">
+    Mobile Sidebar <br />This exeprission to profe that it will not evaluate til
+    it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </aside>
+  <aside class="desktop-sidebar" *showIn="breakPoints.md">
+    Desktop Sidebar <br />
+    This exeprission to profe that it will not evaluate til it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </aside>
+  <article class="desktop-article" *showIn="breakPoints.md">
+    Desktop Content <br />
+    This exeprission to profe that it will not evaluate til it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </article>
+  <article class="mobile-article" *hideIn="breakPoints.md">
+    Mobile Content <br />This exeprission to profe that it will not evaluate til
+    it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </article>
+  <footer class="desktop-footer" *showIn="breakPoints.md">
+    Desktop Footer <br />This exeprission to profe that it will not evaluate til
+    it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </footer>
+  <footer class="mobile-footer" *hideIn="breakPoints.md">
+    Mobile Footer T <br />his exeprission to profe that it will not evaluate til
+    it show up. <br />
+    {{ " { { 06 + 10 + 1973 } } " }}
+    <br />
+    {{ 06 + 10 + 1973 }}
+  </footer>
+</main>

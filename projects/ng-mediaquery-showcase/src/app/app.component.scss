@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  header {
+    border: 4px solid #7e4c97;
+    background-color: #caadf2;
+    height: 100px;
+  }
+  aside {
+    border: 4px solid #2d4f46;
+    background-color: #badbcd;
+    vertical-align: bottom;
+  }
+  article {
+    border: 4px solid #fda40b;
+    background-color: #f7cba4;
+    height: 400px;
+  }
+  footer {
+    border: 4px solid #c73025;
+    background-color: #eeb7b3;
+    height: 200px;
+  }
+}
+aside.desktop-sidebar {
+  width: 200px;
+  height: 400px;
+  display: inline-block;
+}
+article.desktop-article {
+  width: calc(100% - 200px);
+  display: inline-block;
+}
+aside.mobile-sidebar {
+  height: 150px;
+}
